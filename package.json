@@ -1,0 +1,23 @@
+{
+  "name": "acode-plugin",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Template for Acode plugin",
+  "main": "src/main.js",
+  "repository": "https://github.com/Acode-Foundation/acode-plugin.git",
+  "author": "Acode Foundation",
+  "license": "MIT",
+  "dependencies": {
+    "@types/ace": "^0.0.52",
+    "html-tag-js": "^2.4.15"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.8",
+    "jszip": "^3.10.1"
+  },
+  "scripts": {
+    "dev": "node esbuild.config.js --serve",
+    "build": "node esbuild.config.js"
+  },
+  "browserslist": "cover 100%,not android < 5"
+}
